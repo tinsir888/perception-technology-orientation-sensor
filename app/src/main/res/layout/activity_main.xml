@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/text_x"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="380dp"
+        android:text="x-axis"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_y"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="y-axis"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="@+id/text_x"
+        app:layout_constraintTop_toBottomOf="@+id/text_x" />
+
+    <TextView
+        android:id="@+id/text_z"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="z-axis"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="@+id/text_y"
+        app:layout_constraintTop_toBottomOf="@+id/text_y" />
+
+    <TextView
+        android:id="@+id/text_linenow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You are in a straight line now."
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/text_z"
+        app:layout_constraintTop_toBottomOf="@+id/text_z" />
+
+    <TextView
+        android:id="@+id/text_linealways"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You've been always in a straight line."
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/text_linenow"
+        app:layout_constraintTop_toBottomOf="@+id/text_linenow" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="322dp"
+        android:layout_height="249dp"
+        android:src="@drawable/pic"
+        app:layout_constraintBottom_toTopOf="@+id/text_x"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
